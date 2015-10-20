@@ -3,6 +3,8 @@
 This is a collection of python codes for krawtchouk polynomials and corresponding moments.
 Can be easily used for image processing
 
+**requires numpy**
+
 Examples:
 
 ```
