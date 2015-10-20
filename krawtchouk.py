@@ -61,7 +61,7 @@ def wkrchkpoly(N, #number of set of weighted krautchouk polynomials
     
 def wkrchk2dpoly(W,H,p=[0.5,0.5]):
     """
-    wkrchk2dpoly(W,H,p=[0.5,0.5])
+    Z,Kr1,Kr2 = wkrchk2dpoly(W,H,p=[0.5,0.5])
     
     computes two dimensional weighted krawtchouk polynomias
     
@@ -91,7 +91,7 @@ def wkrchk2dpoly(W,H,p=[0.5,0.5]):
 
 def wkrchkmoment_single(X,p=[0.5, 0.5]):
     """
-    wkrchkmoment_single(X,p=[0.5, 0.5])
+    Q, Kr1, Kr2 = wkrchkmoment_single(X,p=[0.5, 0.5])
     
     Computes Krawtchouk Moments of a single grey level imagae, i.e 2D Matrix
     
@@ -123,7 +123,7 @@ def wkrchkmoment_single(X,p=[0.5, 0.5]):
     
 def wkrchkmult_single(X,Kr1,Kr2):
     """
-    wkrchkmoment_single(X,p=[0.5, 0.5])
+    Q = wkrchkmoment_single(X,p=[0.5, 0.5])
     
     Computes Krawtchouk Moments of a single grey level imagae, i.e 2D Matrix
     
@@ -145,7 +145,7 @@ def wkrchkmult_single(X,Kr1,Kr2):
     
 def wkrchkmoment_batch(X,p=[0.5, 0.5]):
     """
-    wkrchkmoment_batch(X,p=[0.5, 0.5])
+    Q, Kr1, Kr2 = wkrchkmoment_batch(X,p=[0.5, 0.5])
     
     Computes Krawtchouk Moments of a batch of images, called batch krawtchouk moments
     
@@ -185,7 +185,7 @@ def wkrchkmoment_batch(X,p=[0.5, 0.5]):
     
 def wkrchkmult_batch(X,Kr1,Kr2):
     """
-    wkrchkmult_batch(X,Kr1,Kr2)
+    Q = wkrchkmult_batch(X,Kr1,Kr2)
     
     Computes Krawtchouk Moments of a batch of image, called batch krawtchouk moments
     
@@ -213,7 +213,7 @@ def wkrchkmult_batch(X,Kr1,Kr2):
 
 def wkrchkmoment_batch_reconstruction(Q, Kr1, Kr2):
     """
-    wkrchkmoment_batch_reconstruction(Q, Kr1, Kr2)
+    X = wkrchkmoment_batch_reconstruction(Q, Kr1, Kr2)
     
     reconstructs a batch of image from it's batch krawtchouk moments
     
@@ -248,7 +248,7 @@ def wkrchkmoment_batch_reconstruction(Q, Kr1, Kr2):
     
 def wkrchkmoment_single_reconstruction(Q,Kr1,Kr2):
     """
-    wkrchkmoment_single_reconstruction(Q,Kr1,Kr2)
+    X = wkrchkmoment_single_reconstruction(Q,Kr1,Kr2)
     
     reconstructs a batch of image from it's batch krawtchouk moments
     
